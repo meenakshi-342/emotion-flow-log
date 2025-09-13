@@ -2,41 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Momentum Wellness App Design System
+All colors MUST be HSL for proper theming.
 */
 
 @layer base {
   :root {
+    /* Core Theme Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 345 22% 11%;
+    
+    /* Rose-themed Brand Colors */
+    --primary: 345 83% 47%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 345 83% 65%;
+    --primary-glow: 345 83% 75%;
+    
+    /* Secondary Colors */
+    --secondary: 345 50% 96%;
+    --secondary-foreground: 345 22% 11%;
+    
+    /* Accent Colors */
+    --accent: 345 50% 96%;
+    --accent-foreground: 345 22% 11%;
+    
+    /* Rose Gradient Palette */
+    --rose-50: 345 50% 98%;
+    --rose-100: 345 50% 95%;
+    --rose-200: 345 50% 90%;
+    --rose-300: 345 60% 80%;
+    --rose-400: 345 70% 65%;
+    --rose-500: 345 83% 47%;
+    --rose-600: 345 83% 40%;
+    --rose-700: 345 83% 35%;
+    --rose-800: 345 83% 25%;
+    
+    /* Pink Accent Colors */
+    --pink-100: 320 45% 95%;
+    --pink-400: 320 65% 70%;
+    --pink-500: 320 75% 60%;
+    
+    /* Utility Colors */
+    --muted: 345 20% 96%;
+    --muted-foreground: 345 10% 45%;
+    --border: 345 20% 92%;
+    --input: 345 20% 92%;
+    --ring: 345 83% 47%;
+    
+    /* Card & Surface Colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --card-foreground: 345 22% 11%;
+    
+    /* Semantic Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--rose-400)), hsl(var(--pink-400)));
+    --gradient-background: linear-gradient(135deg, hsl(var(--rose-50)), hsl(var(--pink-100)), hsl(300 30% 95%));
+    --gradient-card: linear-gradient(135deg, hsl(var(--card)), hsl(var(--rose-50)));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(var(--rose-400) / 0.15);
+    --shadow-medium: 0 8px 30px -8px hsl(var(--rose-400) / 0.2);
+    --shadow-strong: 0 12px 40px -12px hsl(var(--rose-400) / 0.25);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 

@@ -22,6 +22,8 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          light: "hsl(var(--primary-light))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -47,6 +49,33 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Custom rose palette for Momentum
+        rose: {
+          50: "hsl(var(--rose-50))",
+          100: "hsl(var(--rose-100))",
+          200: "hsl(var(--rose-200))",
+          300: "hsl(var(--rose-300))",
+          400: "hsl(var(--rose-400))",
+          500: "hsl(var(--rose-500))",
+          600: "hsl(var(--rose-600))",
+          700: "hsl(var(--rose-700))",
+          800: "hsl(var(--rose-800))",
+        },
+        // Custom pink palette
+        pink: {
+          100: "hsl(var(--pink-100))",
+          400: "hsl(var(--pink-400))",
+          500: "hsl(var(--pink-500))",
+        },
+        // Semantic colors
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,6 +86,20 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-background': 'var(--gradient-background)',
+        'gradient-card': 'var(--gradient-card)',
+      },
+      boxShadow: {
+        'soft': 'var(--shadow-soft)',
+        'medium': 'var(--shadow-medium)',
+        'strong': 'var(--shadow-strong)',
+      },
+      transitionTimingFunction: {
+        'smooth': 'var(--transition-smooth)',
+        'bounce': 'var(--transition-bounce)',
       },
       borderRadius: {
         lg: "var(--radius)",
